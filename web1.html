@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+
+
+  <title>Your Website</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      font-family: 'Calibri';
+
+      color: #fff;
+      padding-top: 56px;
+      margin: 0;
+    }
+
+    .bg{
+      background-image: url('bg1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+
+    }
+
+    .navbar {
+      width: 100%;
+      font-family: 'Lato', sans-serif;
+      background-color: #000000;
+      
+    }
+
+    .navbar-brand img {
+      max-height: 3.3rem;
+    }
+
+    .nav-item{
+      margin: 10px;
+    }
+
+    .landing {
+
+      height: 100vh;
+    }
+
+    .main-section {
+      padding: 100px 0;
+    }
+
+    h1{
+      font-family: 'lato';
+      font-size: 4rem;
+      font-weight: 900;
+      letter-spacing: -4.0px;
+    }
+
+    p{
+      font-size: 1.1rem;
+    }
+
+    .illustration-section img {
+      margin-top: 4rem;
+      width: 36rem;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .cnt-us-btn{
+      background-color: #ffc001;
+      padding: 1rem;
+      text-decoration: none;
+      color: black;
+      font-weight: 800;
+      border-radius: 6rem;
+    }
+
+    .our-vision-section {
+      background-color: rgb(255, 255, 255);
+      color: #000000;
+      height: 38vh;
+      text-align: center;
+      padding: 20px; /* Add padding for better visibility */
+    }
+
+    h2{
+      font-family: 'Montserrat';
+      font-weight: 800;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00044e;
+    }
+    .our-vision-section h2 {
+      font-family: 'Montserrat';
+      font-weight: 800;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #00044e;
+    }
+
+    /* Our Services Section */
+    .our-services-section {
+      background-color: #f8f9fa;
+      padding: 50px 0;
+    }
+
+    .service-card {
+      background-color: #768CFF;
+      color: #ffffff;
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      margin: 20px;
+    }
+
+    .service-card img {
+      max-width: 100%;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .service-card-body {
+      padding: 20px;
+    }
+
+    .service-card h3 {
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 1.2rem;
+      font-family: 'Montserrat';
+      text-align: center;
+    }
+
+    .service-card p {
+      text-align: justify;
+    }
+
+    .more-btn {
+      display: block;
+      margin: 20px auto;
+      text-align: center;
+      height: 4rem;
+      border-radius: 50%;
+      border: none;
+      width: 4rem;
+      background-image: linear-gradient(to right,#3ff9ff, #7DEFFF, #88CDFF, #818eff, #ba82ff);
+    }
+
+    .service-card-body a {
+      font-family: 'Montserrat';
+      box-shadow: 2px 5px 5px 5px #0000000e;
+      font-weight: 700;
+      padding-top: 1.1rem;
+    }
+
+    /* Our Customers Section */
+    .customers-section {
+      color: #000000;
+      background-color: #ffffff;
+      padding: 50px 0;
+    }
+
+    .customer-logo {
+      max-height: 50px;
+      margin: 20px;
+    }
+
+    /* Tech Stack Section */
+    .tech-stack-section {
+      color: #000000;
+      background-color: #f8f9fa;
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    .tech-stack-logo {
+      max-height: 50px;
+      margin: 20px;
+    }
+
+    .tech-stack-section p {
+      font-size: larger;
+    }
+
+    /* Footer Section */
+    .footer-section {
+      background-image: linear-gradient(to right, #000459,#4E007E,#323583);
+      padding: 20px 0;
+    }
+
+    .footer-logo {
+      max-height: 40px;
+    }
+
+    .footer-quote {
+      margin-top: 10px;
+      font-style: italic;
+    }
+
+    .footer-nav {
+      text-align: center;
+    }
+
+    .footer-nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      
+    }
+
+    .footer-para {
+      margin-left: 6rem;
+      text-align: left;
+    }
+
+
+
+    @media only screen and (max-width: 600px){
+      .illustration-section img{
+        margin-top: 0;
+        width: 25rem;
+      }
+      .main-section {
+      padding: 64px 0;
+    }
+    }
+  </style>
+</head>
+<body>
+
+<section class="bg">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="ITians-logo-w-trns.png" alt="Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" href="#home">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">Internship</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Resources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Landing Section -->
+  <section id="home" class="landing">
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Illustration Section -->
+        
+
+        <!-- Main Section -->
+        <div class="col-md-6">
+          <div class="row main-section">
+            <div class="col-md-12">
+              <h1>ITians <br>
+                Welcomes You!</h1>
+              <p>We're all about making businesses shine online! <br> Whether you're a small startup or a big company, <br> we've got your back with awesome web development, <br> app creation, and cool graphics design.</p>
+              <a href="" class="cnt-us-btn">Contact Us</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="illustration-section">
+            <img src="landing-ill.svg" alt="Illustration">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
+  <!-- Our Vision Section -->
+  <section>
+  <div id="about" class="container">
+    <div class="row our-vision-section">
+      <div class="col-md-12">
+        <h2>Our Vision</h2>
+        <p>To help every business go digital, thrive, and succeed online. Let's bring your company into the spotlight together!
+        <br> We Just Don’t Give Services to Customers But our aim is to also give Knowledge to upcoming ITians.
+          </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Our Services Section -->
+  <section class="our-services-section">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="row">
+        <div class="col-md-3">
+          <div class="service-card">
+            <div class="service-card-body">
+              <h3>Web <br>
+                Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary more-btn">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card">
+            <div class="service-card-body">
+              <h3>App <br>Development</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary more-btn">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card">
+            <div class="service-card-body">
+              <h3>Web <br>Designs</h3>
+              <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary more-btn">More</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="service-card">
+            <div class="service-card-body">
+              <h3>Graphics <br>Designing</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <a href="#" class="btn btn-primary more-btn">More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Customers Section -->
+  <section class="customers-section">
+    <div class="container text-center">
+      <h2>Our Success is in Our Customer’s Success</h2>
+      <img src="customer1.png" alt="Customer 1" class="customer-logo">
+      <img src="customer2.png" alt="Customer 2" class="customer-logo">
+      <img src="customer3.png" alt="Customer 3" class="customer-logo">
+      <!-- Add more customer logos as needed -->
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack-section">
+    <div class="container">
+      <h2>Tech Stack We Use</h2>
+      <p>We use a current, industry-leading tech stack to deliver optimal solutions.  Our approach ensures we harness the best tools available for top-notch performance and innovation.</p>
+      <img src="tech1.png" alt="Tech 1" class="tech-stack-logo">
+      <img src="tech2.png" alt="Tech 2" class="tech-stack-logo">
+      <img src="tech3.png" alt="Tech 3" class="tech-stack-logo">
+      <!-- Add more tech logos as needed -->
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <section class="footer-section">
+    <div class="container">
+      <div class="row">
+        <!-- Left Section -->
+        <div class="col-md-4">
+          <img src="ITians-logo-w-trns.png" alt="Footer Logo" class="footer-logo">
+          <p class="footer-quote"><b> Best Wishes To You! </b> <br>
+            We appreciate your trust !Here's to your success and a future filled with prosperity.
+            Thank you for considering us.</p>
+        </div>
+
+        <!-- Center Section -->
+        <div class="col-4 col-sm-1 footer-nav">
+          <a href="#">Home</a>
+          <a href="#">About</a>
+          <a href="#">Services</a>
+          <a href="#">Contact</a>
+        </div>
+
+        <!-- Right Section -->
+        <div class="col3 col-sm-4 footer-para">
+          <p>We Just Don’t Give Services to Customers But our aim is to also give Knowledge to upcoming ITians. <br> <br>
+
+          <b> We Believe that if our future is guided Right so they can create big impact. </b>For that we have Resources Included on Our Site and Courses also.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Additional script for navbar transparency effect -->
+  <script>
+    // Change navbar background on scroll
+    window.onscroll = function () {
+      var scrollPos = window.scrollY;
+
+      if (scrollPos > 100) {
+        document.querySelector('.navbar').style.backgroundColor = '#000';
+      } else {
+        document.querySelector('.navbar').style.backgroundColor = '';
+      }
+    };
+  </script>
+</body>
+</html>
